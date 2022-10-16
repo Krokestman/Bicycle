@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: none;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   line-height: 1;
+   font-family: 'Manrope', sans-serif;
+   font-size: 16px;
+   color: #000;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.page {
+   flex: 1 1 auto;
+}
+
+/* Адаптивність================================================ */
+[class*="__container"] {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+   [class*="__container"] {
+      max-width: 970px;
+   }
+}
+
+@media (max-width: 990.98px) {
+   [class*="__container"] {
+      max-width: 750px;
+   }
+}
+
+@media (max-width: 767.98px) {
+   [class*="__container"] {
+      max-width: none;
+      padding: 0px 15px;
+   }
+}
+
+/* =================================================== */
+.header {
+   background-color: #1F1F26;
+}
+
+.header__container {
+   min-height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+   .header__container {
+      flex-direction: column;
+      min-height: 0px;
+   }
+}
+
+.header__logo {
+   width: 180px;
+}
+
+.header__logo img {
+   width: 100%;
+}
+
+.menu__list {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 28px;
+   row-gap: 5px;
+   align-items: center;
+}
+
+@media (max-width: 767.98px) {
+   .menu__list {
+      justify-content: center;
+      column-gap: 70px;
+   }
+}
+
+.menu__link {
+   font-size: 18px;
+   font-weight: 700;
+   color: #fff;
+}
+
+@media(max-width:990.98px) {
+   .menu__text {
+      display: none;
+   }
+}
+
+.menu__icon {
+   font-size: 30px;
+}
+
+.menu__link:hover {
+   color: #FA625A;
+   transition: .2s;
+}
+
+/* Сторінка======================================= */
+
+
+.page__main {
+   background-color: #1e1f28;
+}
+
+.main-block__container {
+   position: relative;
+   overflow: hidden;
+   padding-top: 50px;
+}
+
+.main-block__container::after {
+   content: '';
+   position: absolute;
+   background: linear-gradient(to right, #DC4F45, #EB876D);
+   width: 500px;
+   height: 500px;
+   border-radius: 50%;
+   outline: 5px dashed #DC4F45;
+   outline-offset: 35px;
+   bottom: -20%;
+   left: 68%;
+}
+
+/* ========================================================== */
+.body-main-blok {
+   display: flex;
+}
+
+.body-main-blok__content {
+   flex: 0 1 50%;
+   padding-right: 190px;
+   padding-bottom: 20px;
+   color: #fff;
+}
+
+@media (max-width: 1199.98px) {
+   .body-main-blok__content {
+      padding-right: 100px;
+   }
+}
+
+@media (max-width: 990.98px) {
+   .body-main-blok__content {
+      padding-right: 0px;
+   }
+}
+
+.content-main-blok__sub-title {
+   font-family: 'Comforter Brush', cursive;
+   font-size: 40px;
+   line-height: 45px;
+   color: #df4f47;
+}
+
+.content-main-blok__main-title {
+   font-weight: 800;
+   font-size: 52px;
+   line-height: 55px;
+   margin-bottom: 15px;
+}
+
+.content-main-blok__text {
+   font-size: 12px;
+   font-weight: 300;
+   margin-bottom: 40px;
+}
+
+.content-main-blok__button {
+   display: inline-blok;
+   padding: 14px 30px;
+   border-radius: 40px;
+   line-height: 20px;
+   font-size: 20px;
+   user-select: none;
+   background: linear-gradient(to right, #f95950, #ED886B);
+   border: 1px solid #000;
+   color: #fff;
+}
+
+.content-main-blok__button:hover {
+   cursor: pointer;
+   background: linear-gradient(to right, #f95950, #fc9579);
+   transition: .3s;
+}
+
+/* ============================================================= */
+.swiper {
+   flex: 0 1 50%;
+   min-width: 0;
+}
+
+.slider-main-block__slide img {
+   width: 100%;
+}
+
+/* ============================================================= */
+.page__principles {
+   margin: 15px 0;
+}
+
+.principles__items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.principles__item {
+   max-width: 400px;
+   min-width: auto;
+   justify-content: center;
+}
