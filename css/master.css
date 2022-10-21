@@ -300,3 +300,177 @@ body {
       grid-template-columns: 1fr;
    }
 }
+
+/* Скролбар=================================================================================== */
+.showcase-slider {
+   margin-bottom: 70px;
+}
+
+.showcase-slider__container {}
+
+.showcase-slider__body {}
+
+/* =========================================================================== */
+.showcase-slider-nav {
+   margin-bottom: 15px;
+}
+
+.showcase-slider-nav__items-list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 32px;
+   row-gap: 10px;
+   flex-wrap: wrap;
+}
+
+.showcase-slider-nav__item {}
+
+.showcase-slider-nav__button {
+   cursor: pointer;
+   width: 165px;
+   padding: 10px 0;
+   background-color: #FB5850;
+   border-radius: 100px;
+}
+
+.showcase-slider-nav__button-text {
+   font-size: 20px;
+   line-height: 1;
+   font-weight: bold;
+}
+
+.showcase-slider-nav__button:hover {
+   color: #fff;
+}
+
+/* ================================================================ */
+.showcase-slider__swiper {}
+
+.showcase-slider-swiper {}
+
+.showcase-slider-swiper__wrapper {}
+
+.swiper-wrapper {}
+
+.showcase-slider-swiper__slide {}
+
+.swiper-slide {}
+
+
+
+.showcase-slider-swiper__holder {
+   position: relative;
+   /* width: 25%; */
+}
+
+.showcase-slider-swiper__holder:hover {
+   cursor: pointer;
+}
+
+.showcase-slider-swiper__holder:hover .showcase-slider-swiper__manga-name {
+   color: #FA6B64;
+}
+
+.showcase-slider-swiper__image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 300px;
+}
+
+.showcase-slider-swiper__image-row {
+   display: flex;
+   flex: 0 0 99%;
+}
+
+.showcase-slider-swiper__image-row img {
+   width: 100%;
+}
+
+.showcase-slider-swiper-info {
+   position: absolute;
+   top: 0;
+   padding: 4px 0;
+   margin-left: 1px;
+   box-shadow: -1px 0px 1px 0px rgba(0, 0, 0, 0.43);
+   font-size: 11px;
+   text-transform: uppercase;
+   display: flex;
+   flex-direction: column;
+   row-gap: 4px;
+   color: #fff;
+}
+
+.showcase-slider-swiper-info__sale {
+   padding: 5px 10px;
+   background-color: #FB5850;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-left: 1px solid #D64B44;
+}
+
+.showcase-slider-swiper-info__new {
+   padding: 5px 10px;
+   background-color: #FF977D;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-left: 1px solid #D9806A;
+}
+
+.showcase-slider-swiper-info__hit {
+   padding: 5px 10px;
+   background-color: #FB7B3C;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   border-left: 1px solid #D66933;
+}
+
+.showcase-slider-swiper__manga-name {
+   margin: 10px 0;
+   display: block;
+   font-size: 17px;
+}
+
+.showcase-slider-swiper__price {
+   font-weight: bold;
+}
+
+
+
+.showcase-slider-swiper__buttons {
+   color: #000;
+   background-color: #fff;
+   /* border: 1px solid #EAEAEA; */
+   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+   border-radius: 100%;
+   width: auto;
+   height: auto;
+   transform: translate(-50%, -50%);
+}
+
+.showcase-slider-swiper__buttons:hover {
+   /* border: 1px solid #000; */
+   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+.showcase-slider-swiper__buttons-prev {
+   left: 25px;
+}
+
+.showcase-slider-swiper__buttons-next {
+   right: 20px;
+}
+
+.showcase-slider-swiper__buttons::after {
+   color: #000;
+   font-size: 20px;
+   padding: 10px 15px;
+   font-weight: 700;
+}
+
+.swiper-button-prev {}
+
+
+
+.swiper-button-next {}
