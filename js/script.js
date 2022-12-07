@@ -36,12 +36,12 @@ new Swiper('.showcase-slider-swiper', {
    },
 });
 
-// const mediaQuery = window.matchMedia('(max-width: 990.98px)')
-// if (mediaQuery.matches) {
-//    alert('Media Query Matched!')
-//    new Swiper('.showcase-slider-swiper', {
-//       loop: false,
-//       slidesPerView: 3,
-//       slidesPerGroup: 1,
-//    });
-// }
+/* const mediaQuery = window.matchMedia('(max-width: 990.98px)')
+if (mediaQuery.matches) {
+   alert('Media Query Matched!')
+   new Swiper('.showcase-slider-swiper', {
+      loop: false,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+   });
+} */
